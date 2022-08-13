@@ -34,18 +34,21 @@
         <section>
             <h2>Our Contact Form</h2>
 
-            <form action="" border="2">
+            <form action="https://httpbin.org/get" method="get" > 
+                <fieldset>
+                    <legend> Send Us a message</legend>
                 <label for="name">Name *: </label>
                 <input type="text" name="name" id="name" placeholder="your name" required>
                 <br><br><label for="mail">Email *: </label>
                 <input type="email" name="mail" id="mail" placeholder="your name" required>
-                <br><br><label for="Message">Your Message : </label>
-                <input type="textfield" name="Message" id="Message" placeholder="your name" required>
-
+                <br><br>
+                <label for="Message">Your Message : </label><br>
+                <textarea name="message" id="messsage" cols="30" rows="10" placeholder="Type Your message">  </textarea>
+            </fieldset>
             </form>
             <br>
-            <button >Send</button>
-            <button>Reset</button>
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
 
         </section>
     </main>
